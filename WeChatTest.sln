@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChatTest", "WeChatTest\WeChatTest.csproj", "{400DEDD2-7960-4E9C-AD74-70D0761AEC71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChatTest.DAL", "WeChatTest.DAL\WeChatTest.DAL.csproj", "{77E32B58-B19D-4029-AA73-E43672E074C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChatDemo", "WeChatDemo\WeChatDemo.csproj", "{11A2B255-4348-462E-864F-006F90F0E544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChatSocketServer", "WeChatSocketServer\WeChatSocketServer.csproj", "{2356E964-F5A6-45C0-83AA-283240CEC2CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{400DEDD2-7960-4E9C-AD74-70D0761AEC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400DEDD2-7960-4E9C-AD74-70D0761AEC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400DEDD2-7960-4E9C-AD74-70D0761AEC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400DEDD2-7960-4E9C-AD74-70D0761AEC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E32B58-B19D-4029-AA73-E43672E074C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E32B58-B19D-4029-AA73-E43672E074C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E32B58-B19D-4029-AA73-E43672E074C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E32B58-B19D-4029-AA73-E43672E074C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A2B255-4348-462E-864F-006F90F0E544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A2B255-4348-462E-864F-006F90F0E544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A2B255-4348-462E-864F-006F90F0E544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A2B255-4348-462E-864F-006F90F0E544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2356E964-F5A6-45C0-83AA-283240CEC2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2356E964-F5A6-45C0-83AA-283240CEC2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2356E964-F5A6-45C0-83AA-283240CEC2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2356E964-F5A6-45C0-83AA-283240CEC2CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

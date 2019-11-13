@@ -1,0 +1,7 @@
+D:\Sample Code\WeChatTest\WeChatTest.DAL\bin\Release\WeChatTest.DAL.dll
+D:\Sample Code\WeChatTest\WeChatTest.DAL\bin\Release\WeChatTest.DAL.pdb
+D:\Sample Code\WeChatTest\WeChatTest.DAL\bin\Release\Dapper.dll
+D:\Sample Code\WeChatTest\WeChatTest.DAL\bin\Release\Dapper.xml
+D:\Sample Code\WeChatTest\WeChatTest.DAL\obj\Release\WeChatTest.DAL.csprojResolveAssemblyReference.cache
+D:\Sample Code\WeChatTest\WeChatTest.DAL\obj\Release\WeChatTest.DAL.dll
+D:\Sample Code\WeChatTest\WeChatTest.DAL\obj\Release\WeChatTest.DAL.pdb
