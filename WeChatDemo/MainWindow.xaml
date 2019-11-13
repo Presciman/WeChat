@@ -1,0 +1,52 @@
+﻿<Window x:Class="WeChatDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeChatDemo"
+        mc:Ignorable="d" ResizeMode="NoResize"
+        Title="张裕DIY流程演示用" Height="400" Width="650">
+    <Grid Name="layout">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="6*" />
+        </Grid.ColumnDefinitions>
+        <ListBox Name="listBox" SelectionChanged="listBox_SelectionChanged" ScrollViewer.CanContentScroll="False" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}" Width="270" Margin="10"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Grid.Column="1" Name="imgContainer"   >
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Margin="10" ClipToBounds="True" ManipulationDelta="Window_ManipulationDelta" ManipulationStarting="Window_ManipulationStarting" ManipulationCompleted="grid_ManipulationCompleted"
+          ManipulationInertiaStarting="Window_ManipulationInertiaStarting">
+                <Grid.Resources>
+                    <MatrixTransform x:Key="InitialMatrixTransform">
+                        <MatrixTransform.Matrix>
+                            <Matrix OffsetX="0" OffsetY="0"/>
+                        </MatrixTransform.Matrix>
+                    </MatrixTransform>
+                </Grid.Resources>
+                <Image Name="bg"  IsManipulationEnabled="True" RenderTransform="{StaticResource InitialMatrixTransform}"/>
+                <Image Source="Assets/logo.png" IsHitTestVisible="False"  />
+            </Grid>
+
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" Orientation="Horizontal" Margin="5">
+                <Button Content="付款" Width="150" Height="60" Margin="10" Click="Pay_Click"/>
+                <Button Content="返回" Width="150" Height="60" Margin="10" Click="GoBack_Click"/>
+            </StackPanel>
+        </Grid>
+
+
+
+        <!--<local:UserControl1  Grid.ColumnSpan="2" x:Name="step1" />
+        <local:ScanQR Grid.ColumnSpan="2" x:Name="stepOne" />-->
+    </Grid>
+</Window>
